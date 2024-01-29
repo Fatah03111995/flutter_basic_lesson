@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_lesson/pages/second_page.dart';
+import 'package:flutter_basic_lesson/pages_les3/second_page.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
@@ -22,8 +22,11 @@ class FirstPage extends StatelessWidget {
                     EdgeInsets.fromLTRB(40, 20, 40, 20))),
             child: const Text('Go to 2nd Page'),
             onPressed: () {
-              Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => const SecondPage()));
+              Navigator.pushNamed(context, '/secondpage');
+
+              // jika tidak dbuat routes d halaman main
+              // Navigator.push(context,
+              //     MaterialPageRoute(builder: (context) => const SecondPage()));
             },
           ),
         ));

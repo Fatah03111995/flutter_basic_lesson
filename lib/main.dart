@@ -1,21 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_lesson/pages/first_page.dart';
-import './les2_tap.dart';
+import './les4_columnrow.dart';
 
 void main() {
   runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: FirstPage(),
-    );
-  }
 }
