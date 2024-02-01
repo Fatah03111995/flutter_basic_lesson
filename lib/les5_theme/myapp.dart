@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_lesson/les5_theme/pages/home_page.dart';
-import './theme.dart';
+import 'theme/theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});

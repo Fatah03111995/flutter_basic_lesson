@@ -1,8 +1,18 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:flutter_basic_lesson/les5_theme/theme/theme_provider.dart';
+import 'package:provider/provider.dart';
 import './les5_theme/myapp.dart';
 
+// void main() {
+//   runApp(MyApp());
+// }
+
+//digunakan untuk mengganti theme. dark mode to lighmode
 void main() {
-  runApp(MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (context) => ThemeProvider(),
+    child: const MyApp(),
+  ));
 }
