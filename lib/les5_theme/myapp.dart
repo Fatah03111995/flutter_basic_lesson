@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_lesson/les5_theme/pages/home_page.dart';
+import './theme.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,6 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: const HomePage(),
+      theme: lightMode,
+      darkTheme: darkMode,
     );
   }
 }
