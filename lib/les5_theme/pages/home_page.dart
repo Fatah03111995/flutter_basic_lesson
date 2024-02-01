@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_basic_lesson/les5_theme/components/box.dart';
 import 'package:flutter_basic_lesson/les5_theme/components/button.dart';
+import 'package:flutter_basic_lesson/les5_theme/theme/theme_provider.dart';
+import 'package:provider/provider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -14,7 +16,9 @@ class HomePage extends StatelessWidget {
           color: Theme.of(context).colorScheme.primary,
           child: MyButton(
             color: Theme.of(context).colorScheme.secondary,
-            onTap: () {},
+            onTap: () {
+              Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
+            },
           ),
         )));
   }
