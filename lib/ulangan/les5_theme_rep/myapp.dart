@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_lesson/ulangan/les5_theme/theme/theme_provider.dart';
-import 'package:flutter_basic_lesson/ulangan/les5_theme/pages/home_page.dart';
+import 'package:flutter_basic_lesson/ulangan/les5_theme_rep/pages/home_page.dart';
+import 'package:flutter_basic_lesson/ulangan/les5_theme_rep/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
 
 class MyApp extends StatelessWidget {
@@ -9,7 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: HomePage(),
       theme: Provider.of<ThemeProvider>(context).theme,
     );
   }
