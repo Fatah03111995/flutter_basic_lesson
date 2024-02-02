@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 ThemeData lightMode = ThemeData(
   brightness: Brightness.light,
+  scaffoldBackgroundColor: Colors.green.shade400,
   colorScheme: ColorScheme.light(
       background: Colors.grey.shade400,
       primary: Colors.grey.shade300,
@@ -10,6 +11,7 @@ ThemeData lightMode = ThemeData(
 
 ThemeData darkMode = ThemeData(
     brightness: Brightness.dark,
+    scaffoldBackgroundColor: Colors.black,
     colorScheme: ColorScheme.dark(
         background: Colors.grey.shade900,
         primary: Colors.grey.shade800,

@@ -10,16 +10,16 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Theme.of(context).colorScheme.background,
+        // backgroundColor: Theme.of(context).colorScheme.background,
         body: Center(
             child: MyBox(
-          color: Theme.of(context).colorScheme.primary,
-          child: MyButton(
-            color: Theme.of(context).colorScheme.secondary,
-            onTap: () {
-              Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
-            },
-          ),
-        )));
+      color: Theme.of(context).colorScheme.primary,
+      child: MyButton(
+        color: Theme.of(context).colorScheme.secondary,
+        onTap: () {
+          Provider.of<ThemeProvider>(context, listen: false).toggleTheme();
+        },
+      ),
+    )));
   }
 }

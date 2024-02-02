@@ -1,9 +1,9 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:flutter_basic_lesson/les5_theme/theme/theme_provider.dart';
+import 'package:flutter_basic_lesson/ulangan/les5_theme/theme/theme_provider.dart';
 import 'package:provider/provider.dart';
-import './les5_theme/myapp.dart';
+import 'ulangan/les5_theme/myapp.dart';
 
 // void main() {
 //   runApp(MyApp());
