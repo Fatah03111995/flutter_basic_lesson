@@ -7,14 +7,12 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    void onTap(String link) => Navigator.pushNamed(context, link);
     return const Scaffold(
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         ButtonLink(
-            paramFn: '/listview_horizontal',
-            child: Text('List View Horizontal')),
+            paramFn: '/list_horizontal', child: Text('List View Horizontal')),
         ButtonLink(
-            paramFn: '/listview_vertical', child: Text('List View Vertical')),
+            paramFn: '/list_vertical', child: Text('List View Vertical')),
       ]),
     );
   }
