@@ -12,9 +12,10 @@ class ButtonLink extends StatelessWidget {
     return GestureDetector(
       onTap: () => Navigator.pushNamed(context, paramFn),
       child: Container(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(20),
         decoration: BoxDecoration(
-            color: color, borderRadius: BorderRadius.circular(10)),
+            color: Colors.blue.shade400,
+            borderRadius: BorderRadius.circular(10)),
         child: child,
       ),
     );
